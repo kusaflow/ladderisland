@@ -2319,6 +2319,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4792486352301342708, guid: 82cf27c56c92a6d4c8e7bb7981163c64, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0260715bdfa8e4548a47f2caf1de9169, type: 2}
     - target: {fileID: 6280310817740710903, guid: 82cf27c56c92a6d4c8e7bb7981163c64, type: 3}
       propertyPath: m_Name
       value: mainPl
@@ -2635,7 +2639,7 @@ PrefabInstance:
       objectReference: {fileID: 1265732849}
     - target: {fileID: 6687638169165554392, guid: 72115fd96096b564490700d03cbb620e, type: 3}
       propertyPath: m_SortingOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6729980918402075562, guid: 72115fd96096b564490700d03cbb620e, type: 3}
       propertyPath: m_Enabled
@@ -2643,7 +2647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6729980918402075562, guid: 72115fd96096b564490700d03cbb620e, type: 3}
       propertyPath: m_SortingOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8180528606132956660, guid: 72115fd96096b564490700d03cbb620e, type: 3}
       propertyPath: tmpobj
@@ -2675,7 +2679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8180528606132956661, guid: 72115fd96096b564490700d03cbb620e, type: 3}
       propertyPath: m_SortingOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8180528606132956663, guid: 72115fd96096b564490700d03cbb620e, type: 3}
       propertyPath: m_Name

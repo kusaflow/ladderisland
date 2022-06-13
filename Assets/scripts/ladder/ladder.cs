@@ -79,7 +79,7 @@ public class ladder : MonoBehaviour
                 isTouchedDown = false;
                 b_ladderIncDone = true;
                 isFree = false;
-                mainPlayer.anim.Play("inMvmnt");
+                mainPlayer.anim.Play(globalV.PlayerIDX+ "_Die");
             }
         }else{
             timerforinputtowork = Mathf.Clamp(timerforinputtowork+10*Time.deltaTime, 0, 60);
@@ -158,7 +158,7 @@ public class ladder : MonoBehaviour
     }
 
     IEnumerator CR_reset(bool died,int noIslandsMissed){
-        yield return new WaitForSeconds(90f/(ladRotSpeed));/////////////////////////////////////////
+        yield return new WaitForSeconds(90f/(ladRotSpeed));//////
         //lvlMngr.CamFocusIsland = targetLocation;
          resetCamera = true; 
 
@@ -166,11 +166,11 @@ public class ladder : MonoBehaviour
         mainPPos.x = targetLocation;
         mainPlayer.gameObject.transform.position = mainPPos;
         if (!died)
-            mainPlayer.anim.Play("outMvmnt_fine");
+            mainPlayer.anim.Play(globalV.PlayerIDX+ "_ReS");
         else
-            mainPlayer.anim.Play("outMvmnt_killed");
+            mainPlayer.anim.Play(globalV.PlayerIDX+ "_Die");
         
-        yield return new WaitForSeconds(0.5f);////////////////////////////////////////////
+        yield return new WaitForSeconds(0.5f);//////
        
         if (!died){
             for (int i =0; i<noIslandsMissed; i++){        
@@ -230,7 +230,7 @@ public class ladder : MonoBehaviour
 
             lvlMngr.CamFocusIsland = peekpos.x;
             timerforinputtowork = 10;
-            mainPlayer.anim.Play("outMvmnt_fine");
+            mainPlayer.anim.Play(globalV.PlayerIDX+ "_ReS");
 
             //shark
             Vector3 finnP = sharkFinn.transform.position;
