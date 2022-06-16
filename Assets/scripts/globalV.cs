@@ -6,6 +6,8 @@ public class globalV : MonoBehaviour
 {
     public static bool isDead =false;
     public static int PlayerIDX = 2;
+    public static int PlayerCount = 5;
+    
 
 
 }
