@@ -14,7 +14,7 @@ public class animMngr : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        anim.Play(globalV.PlayerIDX+ "_0");
+        anim.Play(globalV.CurrentAvatar+ "_0");
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class animMngr : MonoBehaviour
         if (ladder.isFree){
             if (animTimer >= animLmt) {
                 int choosen = (int)(Random.Range(1, 6));
-                anim.Play(globalV.PlayerIDX+ "_"+choosen);
+                anim.Play(globalV.CurrentAvatar+ "_"+choosen);
                 animTimer = 0;
                 animLmt = Random.Range(30, 60);
                 //CourantineDelayTime = CDT_ret(choosen);
@@ -38,7 +38,7 @@ public class animMngr : MonoBehaviour
 
     IEnumerator animState_reset(){
         yield return new WaitForSeconds(1);
-        anim.Play(globalV.PlayerIDX+ "_0");
+        anim.Play(globalV.CurrentAvatar+ "_0");
     }
 
 

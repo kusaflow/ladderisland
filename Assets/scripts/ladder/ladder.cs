@@ -79,7 +79,7 @@ public class ladder : MonoBehaviour
                 isTouchedDown = false;
                 b_ladderIncDone = true;
                 isFree = false;
-                mainPlayer.anim.Play(globalV.PlayerIDX+ "_Die");
+                mainPlayer.anim.Play(globalV.CurrentAvatar+ "_Die");
             }
         }else{
             timerforinputtowork = Mathf.Clamp(timerforinputtowork+10*Time.deltaTime, 0, 60);
@@ -166,9 +166,9 @@ public class ladder : MonoBehaviour
         mainPPos.x = targetLocation;
         mainPlayer.gameObject.transform.position = mainPPos;
         if (!died)
-            mainPlayer.anim.Play(globalV.PlayerIDX+ "_ReS");
+            mainPlayer.anim.Play(globalV.CurrentAvatar+ "_ReS");
         else
-            mainPlayer.anim.Play(globalV.PlayerIDX+ "_Die");
+            mainPlayer.anim.Play(globalV.CurrentAvatar+ "_Die");
         
         yield return new WaitForSeconds(0.5f);//////
        
@@ -209,6 +209,8 @@ public class ladder : MonoBehaviour
     
     //retry
     public void Retry(){
+            resetCamera = true; 
+
             b_ladderIncDone = false;
             b_afterMathCalled = false;
             isTouchedDown = false;
@@ -230,7 +232,7 @@ public class ladder : MonoBehaviour
 
             lvlMngr.CamFocusIsland = peekpos.x;
             timerforinputtowork = 10;
-            mainPlayer.anim.Play(globalV.PlayerIDX+ "_ReS");
+            mainPlayer.anim.Play(globalV.CurrentAvatar+ "_ReS");
 
             //shark
             Vector3 finnP = sharkFinn.transform.position;
