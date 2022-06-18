@@ -11,7 +11,9 @@ public class easySave : MonoBehaviour
         EasyFileSave myF = new EasyFileSave("saveData");
         myF.Add("xp", globalV.XP);
         myF.Add("AdFree", globalV.isAdFree);
-        
+
+        myF.Add("chickenPower", globalV.ChickenPower);
+        myF.Add("CheatPower", globalV.CheatPower);
 
         //Avatars
         for (int i =0; i<globalV.Avatars.Length; i++){    
@@ -36,6 +38,9 @@ public class easySave : MonoBehaviour
         {
             globalV.XP = myF.GetInt("xp");
             globalV.isAdFree = myF.GetBool("AdFree");
+            
+            globalV.ChickenPower = myF.GetInt("chickenPower");
+            globalV.CheatPower = myF.GetInt("CheatPower");
 
             //Avatar 
             for (int i =0; i<globalV.Avatars.Length; i++){    
@@ -56,6 +61,8 @@ public class easySave : MonoBehaviour
 
             globalV.CurrentAvatar = 1;
             globalV.XP = 100000;
+            globalV.ChickenPower = 0;
+            globalV.CheatPower = 0;
             globalV.isAdFree = false;
 
         }

@@ -15,7 +15,7 @@ public class PlSelMgr : MonoBehaviour
     
     private void Start() {
         PlayerIdx = 1;    
-        easySave.LoadFile();
+        //easySave.LoadFile();
     }
 
 

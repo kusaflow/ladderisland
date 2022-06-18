@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ui/3_Power.unity
     guid: f4ec8903d48d71446a643da282069efa
+  - enabled: 1
+    path: Assets/Scenes/ui/4_ScoreCard.unity
+    guid: edebc8c03f01c4d4f918b2b36b8e0324
   m_configObjects: {}
