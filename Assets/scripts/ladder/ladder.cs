@@ -32,6 +32,8 @@ public class ladder : MonoBehaviour
      public GameObject sharkFinn;
 
      public int score;
+
+     bool canTouchscreen = true;
     /*
     2.1 at h 10
     -0.85663 at h 50 
@@ -40,6 +42,8 @@ public class ladder : MonoBehaviour
     2.95663 -- 40
 
     */
+
+
 
 
     // Start is called before the first frame update
@@ -71,13 +75,14 @@ public class ladder : MonoBehaviour
 
     void k_input(){
         if (!globalV.isDead && timerforinputtowork >= 20){
-            if (Input.GetMouseButtonDown(0)){
+            if (Input.GetMouseButtonDown(0) && canTouchscreen){
                 isTouchedDown = true;
                 resetCamera = false;
             } 
-            if (Input.GetMouseButtonUp(0)){
+            if (Input.GetMouseButtonUp(0) && isTouchedDown){
                 isTouchedDown = false;
                 b_ladderIncDone = true;
+                canTouchscreen = false;
                 isFree = false;
                 mainPlayer.anim.Play(globalV.CurrentAvatar+ "_Die");
             }
@@ -171,7 +176,8 @@ public class ladder : MonoBehaviour
             mainPlayer.anim.Play(globalV.CurrentAvatar+ "_Die");
         
         yield return new WaitForSeconds(0.5f);//////
-       
+        
+        canTouchscreen = true;
         if (!died){
             for (int i =0; i<noIslandsMissed; i++){        
                 islandIdentity dq = lvlMngr.Q_island.Dequeue();

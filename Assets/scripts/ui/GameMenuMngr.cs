@@ -16,6 +16,7 @@ public class GameMenuMngr : MonoBehaviour
     void Start()
     {
         isInPlayMode = false;
+        globalV.isDead = false;
         
     }
 
@@ -35,7 +36,11 @@ public class GameMenuMngr : MonoBehaviour
     }
 
     public void onretry () {
-        lad.Retry();
+        if (globalV.retryCost <= globalV.XP){
+            globalV.XP -= globalV.retryCost;
+            lad.Retry();
+            easySave.SaveFile();
+        }
     }
 
     public void SetToPlaymode(){

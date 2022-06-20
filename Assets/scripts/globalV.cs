@@ -19,6 +19,7 @@ public class globalV : MonoBehaviour
     public static int retryCost = 100;
     public static int PerCharCost = 100;
     public static int PowerCost = 100;
+    public static int PerIslandCrossReward = 100;
     
     
 
