@@ -20,12 +20,14 @@ public class animMngr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(ladder.isFree);
         if (ladder.isFree){
             if (animTimer >= animLmt) {
+                
                 int choosen = (int)(Random.Range(1, 6));
                 anim.Play(globalV.CurrentAvatar+ "_"+choosen);
                 animTimer = 0;
-                animLmt = Random.Range(30, 60);
+                animLmt = Random.Range(30, 100);
                 //CourantineDelayTime = CDT_ret(choosen);
                 StartCoroutine(animState_reset());
                 //anim.Play("idle");

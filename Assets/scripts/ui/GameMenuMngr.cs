@@ -43,6 +43,10 @@ public class GameMenuMngr : MonoBehaviour
         }
     }
 
+    public void StartGame () {
+            lad.Retry();
+    }
+
     public void SetToPlaymode(){
         isInPlayMode = true;
     }

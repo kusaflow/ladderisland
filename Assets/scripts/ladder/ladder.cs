@@ -31,7 +31,7 @@ public class ladder : MonoBehaviour
 
      public GameObject sharkFinn;
 
-     public int score;
+     public static int score;
 
      bool canTouchscreen = true;
     /*
@@ -51,6 +51,7 @@ public class ladder : MonoBehaviour
     {
          sr = GetComponent<SpriteRenderer>();
          score = 0;
+         isFree = true;
     }
 
     // Update is called once per frame
@@ -75,7 +76,8 @@ public class ladder : MonoBehaviour
 
     void k_input(){
         if (!globalV.isDead && timerforinputtowork >= 20){
-            if (Input.GetMouseButtonDown(0) && canTouchscreen){
+            if (Input.GetMouseButtonDown(0) && canTouchscreen && Input.mousePosition.y <= Screen.height/1.26f ){
+                //Debug.Log("ddddddddd");
                 isTouchedDown = true;
                 resetCamera = false;
             } 

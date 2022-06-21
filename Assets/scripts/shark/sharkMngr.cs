@@ -9,6 +9,8 @@ public class sharkMngr : MonoBehaviour
 
     public GameObject player;
     public ladder lad;
+
+    public PowerUpMngr power;
     
 
 
@@ -25,12 +27,16 @@ public class sharkMngr : MonoBehaviour
     }
 
     void Movement(){
-        if (!globalV.isDead){
-            //Debug.Log(globalV.isDead);
-            Vector3 SFPos = transform.position;
-            SFPos.x += sharkSpeed * Time.deltaTime;
-            transform.position = SFPos;
+        if (globalV.isDead){
+            return; 
         }
+        if (power.isPowerConsumed && power.isChicken)
+            return;
+        
+        Vector3 SFPos = transform.position;
+        SFPos.x += sharkSpeed * Time.deltaTime;
+        transform.position = SFPos;
+        
     }
 
 

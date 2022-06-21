@@ -659,6 +659,7 @@ MonoBehaviour:
   - {fileID: -733501278, guid: bf0457027cd6bb04e9e0ff1319bcf78b, type: 3}
   - {fileID: 1729631305, guid: 15f70eb84dfe41440b7335b1a94a6830, type: 3}
   - {fileID: -2072836148, guid: 281ce14b08421c1488aa1d790a8bc736, type: 3}
+  - {fileID: 304268363, guid: 259421e59faef3444992ff1a11829a61, type: 3}
   SelectBtn: {fileID: 1477250879}
   BuyBtn: {fileID: 206624075}
 --- !u!1 &779937316

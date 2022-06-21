@@ -7,12 +7,14 @@ using UnityEngine.UI;
 public class scoreMngr : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI score;
-    public ladder lad;
-    
+
+    private void Start() {
+        score = GetComponent<TMPro.TextMeshProUGUI>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        score.text = lad.score.ToString();
+        score.text = ladder.score.ToString();
     }
 }
