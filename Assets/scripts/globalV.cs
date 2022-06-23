@@ -5,7 +5,7 @@ using UnityEngine;
 public class globalV : MonoBehaviour
 {
     public static bool isDead =false;
-    public static int PlayerCount = 6;
+    public static int PlayerCount = 7;
 
 
     public static int XP = 0;

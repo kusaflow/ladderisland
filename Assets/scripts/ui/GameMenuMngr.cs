@@ -29,7 +29,7 @@ public class GameMenuMngr : MonoBehaviour
     }
 
     void startMEnuMngr(){
-        GameEssential_menu.SetActive(isInPlayMode);
+        GameEssential_menu.SetActive(isInPlayMode && !globalV.isDead);
         StartMEnuMngr.SetActive(!isInPlayMode);
         
         
