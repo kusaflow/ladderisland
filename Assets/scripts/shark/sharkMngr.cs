@@ -5,7 +5,8 @@ using UnityEngine;
 public class sharkMngr : MonoBehaviour
 {
 
-    public static float sharkSpeed = 2;
+    public float sharkSpeed = 2;
+    public float sharkSpeed_incRate = 2;
 
     public GameObject player;
     public ladder lad;
@@ -36,6 +37,8 @@ public class sharkMngr : MonoBehaviour
         Vector3 SFPos = transform.position;
         SFPos.x += sharkSpeed * Time.deltaTime;
         transform.position = SFPos;
+
+        sharkSpeed+=sharkSpeed_incRate * Time.deltaTime;
         
     }
 

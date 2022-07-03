@@ -34,6 +34,8 @@ public class ladder : MonoBehaviour
      public static int score;
 
      bool canTouchscreen = true;
+
+     ladderSound ladsnd;
     /*
     2.1 at h 10
     -0.85663 at h 50 
@@ -50,6 +52,7 @@ public class ladder : MonoBehaviour
     void Start()
     {
          sr = GetComponent<SpriteRenderer>();
+         ladsnd = GetComponent<ladderSound>();
          score = 0;
          isFree = true;
     }
@@ -176,6 +179,13 @@ public class ladder : MonoBehaviour
             mainPlayer.anim.Play(globalV.CurrentAvatar+ "_ReS");
         else
             mainPlayer.anim.Play(globalV.CurrentAvatar+ "_Die");
+
+        //music
+        if (!died){
+            ladsnd.Play_onGround();
+        }else{
+            ladsnd.Play_wALTERsPLASH();
+        }
         
         yield return new WaitForSeconds(0.5f);//////
         

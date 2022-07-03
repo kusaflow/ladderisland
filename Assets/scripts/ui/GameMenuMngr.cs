@@ -43,6 +43,12 @@ public class GameMenuMngr : MonoBehaviour
         }
     }
 
+    public void Adfree_onretry (){
+        lad.Retry();
+        easySave.SaveFile();
+    }
+
+
     public void StartGame () {
             lad.Retry();
     }

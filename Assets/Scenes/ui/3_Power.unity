@@ -536,6 +536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  isMeat: 0
 --- !u!222 &254382626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -849,6 +850,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &866222366
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8213114286945130417, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_Name
+      value: click
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 395.46683
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 160.41861
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.002184
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213114286945130420, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffa83eea9116c164aa112bd14e3d5996, type: 3}
 --- !u!1 &960887407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  isMeat: 1
 --- !u!222 &1178109906
 CanvasRenderer:
   m_ObjectHideFlags: 0
