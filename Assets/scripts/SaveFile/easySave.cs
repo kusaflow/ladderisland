@@ -63,7 +63,7 @@ public class easySave : MonoBehaviour
             }
 
             globalV.CurrentAvatar = 1;
-            globalV.XP = 10000;
+            globalV.XP = 0;
             globalV.ChickenPower = 0;
             globalV.CheatPower = 0;
             globalV.isAdFree = false;
