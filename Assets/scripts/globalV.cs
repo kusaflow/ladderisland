@@ -27,11 +27,11 @@ public class globalV : MonoBehaviour
 
 
     //shops
-    public static Vector2 Shop_P_1 = new Vector2(500, 1.99f);
-    public static Vector2 Shop_P_2 = new Vector2(1000, 3.99f);
-    public static Vector2 Shop_P_3 = new Vector2(5000, 17.99f);
-    public static Vector2 Shop_P_4 = new Vector2(20000, 65.99f);
-    public static Vector2 Shop_P_5 = new Vector2(50000, 99.99f);
+    public static Vector2 Shop_P_1 = new Vector2(500, 0.99f);
+    public static Vector2 Shop_P_2 = new Vector2(1000, 1.99f);
+    public static Vector2 Shop_P_3 = new Vector2(5000, 9.99f);
+    public static Vector2 Shop_P_4 = new Vector2(20000, 36.99f);
+    public static Vector2 Shop_P_5 = new Vector2(50000, 69.99f);
     
     
     

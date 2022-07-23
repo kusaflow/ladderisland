@@ -14,6 +14,7 @@ public class adFreeMngr : MonoBehaviour
     public void GoAdfree(Product product){
         globalV.isAdFree = true;
         easySave.SaveFile();
+
     }
 
 }
