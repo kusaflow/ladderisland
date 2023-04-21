@@ -1,8 +1,9 @@
-using UnityEngine.Purchasing;
+//using UnityEngine.Purchasing;
 using UnityEngine;
 
-public class IAP_init : MonoBehaviour, IStoreListener 
+public class IAP_init : MonoBehaviour//, IStoreListener 
 {
+    /*
 
     private IStoreController controller;
     private IExtensionProvider extensions;
@@ -54,7 +55,7 @@ public class IAP_init : MonoBehaviour, IStoreListener
     }   
     ///////////////////////////////
     
-
+    */
 
     
 }
